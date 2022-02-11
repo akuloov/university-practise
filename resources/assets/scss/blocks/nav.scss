@@ -1,0 +1,24 @@
+.nav {
+    display: flex;
+    align-items: center;
+
+    &__point {
+        margin-right: 10px;
+    }
+
+    &__link {
+        transition: all .3s;
+        margin-right: 10px;
+        border-bottom: 1px solid transparent;
+        white-space: nowrap;
+        line-height: 24px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            border-bottom: solid 1px #33485D;
+        }
+    }
+}

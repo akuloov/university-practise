@@ -1,0 +1,22 @@
+.lang{
+    display: flex;
+    align-items: center;
+
+    &__item{
+        margin-right: 15px;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover{
+            opacity: .7;
+        }
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__point{
+        margin-right: 10px;
+    }
+}

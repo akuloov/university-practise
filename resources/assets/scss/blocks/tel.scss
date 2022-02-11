@@ -1,0 +1,8 @@
+.tel {
+    white-space: nowrap;
+    transition: all .3s;
+
+    &:hover {
+        opacity: .7;
+    }
+}
