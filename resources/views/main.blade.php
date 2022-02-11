@@ -15,7 +15,7 @@
         <div class="header">
             <div class="header__top">
                 <div class="header__left">
-                    <a href="">
+                    <a href="/">
                         <svg class="header__logo main-logo">
                             <use href="assets/images/icons.svg#icon-wezom_logo"></use>
                         </svg>
@@ -56,15 +56,25 @@
                 </div>
             </div>
             <div class="header__bottom">
-                <div class="burger-menu">
-                    <span class="burger"></span>
-                    <div class="burger-menu__text">каталог</div>
+                <div class="header__burger-menu burger-menu">
+                    <div class="burger-menu__left">
+                        <div class="burger-menu__burger burger">
+                            <span class="burger__span"></span>
+                        </div>
+                        <div class="burger-menu__text">каталог</div>
+                    </div>
                     <a href="" class="burger-menu__link">Все категории</a>
                     <div class="burger-menu__list">
 
                     </div>
                 </div>
-                <input type="text" placeholder="Поиск, например “тест”" class="search-products">
+                <div class="header__search-products-wrapper search-products-wrapper">
+                    <input type="text" placeholder="Поиск, например “тест”"
+                           class="header__search-products search-products">
+                    <svg class="search-products__icon">
+                        <use href="assets/images/icons.svg#icon-search"></use>
+                    </svg>
+                </div>
                 <div class="useful">
                     <a href="" class="useful__item">
                         <svg class="useful__img">
@@ -80,7 +90,7 @@
                         <svg class="useful__img">
                             <use href="assets/images/icons.svg#icon-basket"></use>
                         </svg>
-                        <div class="counter">3</div>
+                        <div class="useful__counter">3</div>
                     </a>
                 </div>
             </div>

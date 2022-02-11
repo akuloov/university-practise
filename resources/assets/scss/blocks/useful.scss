@@ -1,0 +1,49 @@
+.useful{
+    width: 270px;
+    border: 2px solid #FFCB6D;
+    border-top-right-radius: 18px;
+    display: flex;
+
+    &__item{
+        height: 60px;
+        border-right: 2px solid #FFCB6D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 90px;
+        position: relative;
+
+        &:last-child{
+            border-right: none;
+        }
+
+        &:hover .useful__img{
+            stroke: #a0aec0;
+        }
+    }
+
+    &__img{
+        width: 30px;
+        height: 25px;
+        stroke: #33485D;
+        transition: all .3s;
+    }
+
+    &__counter{
+        width: 30px;
+        height: 20px;
+        background: #FFBE48;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #33485D;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 120%;
+        position: absolute;
+        right: 6px;
+        top: 7px;
+    }
+}

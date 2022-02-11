@@ -1,0 +1,34 @@
+.search-products {
+    max-width: 773px;
+    outline: none;
+    border: none;
+    background-color: #DDE8F0;
+    border-radius: 10px;
+    height: 50px;
+    padding: 19px;
+
+    &-wrapper {
+        position: relative;
+    }
+
+    &[placeholder] {
+        color: rgba(51, 72, 93, .7);
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+        fill: #33485D;
+        position: absolute;
+        right: 12px;
+        top: 16px;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            fill: #FFCB6D;
+        }
+    }
+}

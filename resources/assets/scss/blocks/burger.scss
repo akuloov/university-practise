@@ -1,0 +1,36 @@
+.burger{
+    color: black;
+    width: 25px;
+    height: 19px;
+    position: relative;
+    cursor: pointer;
+
+    &:before, &:after{
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+    }
+    &:before{
+        top: 0;
+    }
+    &:after{
+        bottom: 0;
+    }
+
+    &__span{
+        position: absolute;
+        background-color: #fff;
+        height: 3px;
+        width: 19px;
+        left: 0;
+        top: 8px;
+        transition: all .3s;
+    }
+
+    &:hover &__span{
+        width: 100%;
+    }
+}

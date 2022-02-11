@@ -1,0 +1,43 @@
+.burger-menu {
+    display: flex;
+    align-items: center;
+    max-width: 371px;
+    padding: 20px;
+    background: #FFBE48;
+    border-top-left-radius: 10px;
+    color: #fff;
+
+    &__left{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 83px;
+
+        &:hover .burger-menu__text{
+            opacity: .7;
+        }
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 120%;
+        transition: all .3s;
+    }
+
+    &__burger {
+        margin-right: 20px;
+    }
+
+    &__link {
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+        font-size: 14px;
+        line-height: 24px;
+        transition: all .3s;
+        margin-top: 5px;
+        white-space: nowrap;
+
+        &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+        }
+    }
+}
