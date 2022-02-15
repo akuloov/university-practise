@@ -1,0 +1,39 @@
+.photos{
+    display: flex;
+    align-items: center;
+
+    &__collection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__main-img{
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    &__img{
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    &__prev{
+        transform: rotate(-90deg);
+        fill: #33485D;
+        width: 15px;
+        height: 28px;
+        margin-bottom: 17px;
+        cursor: pointer;
+    }
+    &__next{
+        transform: rotate(90deg);
+        fill: #33485D;
+        width: 15px;
+        height: 28px;
+        margin-top: 1px;
+        cursor: pointer;
+    }
+}

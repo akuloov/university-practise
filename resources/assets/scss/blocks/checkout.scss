@@ -1,0 +1,29 @@
+.checkout{
+    padding: 15px 21px;
+    max-width: 277px;
+    background: #47B39C;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    transition: all .3s;
+
+    &:hover{
+        background: #47B347;
+    }
+
+    &__text{
+        font-size: 24px;
+        line-height: 120%;
+        margin-right: 16px;
+        color: #fff;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    &__img{
+        width: 30px;
+        height: 27px;
+        stroke: #fff;
+        fill: #fff;
+    }
+}

@@ -1,0 +1,35 @@
+.description {
+
+    &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__left {
+            display: flex;
+            align-items: center;
+        }
+
+        &__description-availability {
+            margin-right: 22px;
+        }
+    }
+
+    &-availability {
+        display: flex;
+        align-items: center;
+
+        &__img {
+            fill: #259756;
+            width: 19px;
+            height: 19px;
+            margin-right: 12.5px;
+        }
+
+        &__text {
+            font-weight: 500;
+            font-size: 16px;
+            color: #249755;
+        }
+    }
+}

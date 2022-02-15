@@ -1,0 +1,44 @@
+.category{
+    width: 371px;
+    padding-left: 15px;
+    padding-top: 14px;
+    padding-right: 25px;
+    padding-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: all .3s;
+    z-index: 5000;
+
+    &:hover{
+        background: #DDE8F0;
+    }
+    &:hover &__vector{
+        fill: #33485D;
+    }
+
+    &__left-block{
+        display: flex;
+        align-items: center;
+    }
+
+    &__img{
+        width: 34px;
+        height: 34px;
+        fill: #5C6D7D;
+        margin-right: 16px;
+    }
+
+    &__text{
+        color: #5C6D7D;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__vector{
+        width: 9px;
+        height: 16px;
+        fill: #5C6D7D;
+    }
+}

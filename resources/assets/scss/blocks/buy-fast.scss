@@ -1,0 +1,28 @@
+.buy-fast {
+    width: 167px;
+    border: 2px solid #FFCB6D;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    transition: all .3s;
+
+    &:hover{
+        border: 2px solid #fff;
+        background: #EB5757;
+    }
+
+    &__img {
+        width: 30px;
+        height: 30px;
+        fill: #33485D;
+        margin-right: 13px;
+    }
+
+    &__text {
+        line-height: 120%;
+        font-weight: 500;
+        font-size: 14px;
+        color: #5C6D7D;
+    }
+}

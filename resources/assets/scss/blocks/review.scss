@@ -1,0 +1,44 @@
+.review{
+    padding: 29px 22px 34px 0;
+    border-bottom: 1px solid #DDE8F0;
+    max-width: 587px;
+
+    &:last-child{
+        border-bottom: none;
+    }
+
+    &__title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 11px;
+    }
+
+    &__name{
+        color: #33485D;
+        font-weight: 500;
+        font-size: 16px;
+        margin-right: 18px;
+    }
+
+    &__date{
+        font-weight: 400;
+        color: #5C6D7D;
+    }
+
+    &__rating{
+        display: flex;
+    }
+
+    &__star{
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+
+        &--orange{
+            fill: #FFA800;
+        }
+        &--yellow{
+            fill: rgba(255, 168, 0, .5);
+        }
+    }
+}

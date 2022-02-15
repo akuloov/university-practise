@@ -11,87 +11,175 @@
 
 <body>
 <div class="layout">
-    <div class="container">
-        <div class="header">
-            <div class="header__top">
-                <div class="header__left">
-                    <a href="/">
-                        <svg class="header__logo main-logo">
-                            <use href="assets/images/icons.svg#icon-wezom_logo"></use>
-                        </svg>
-                    </a>
-                    <div class="header__nav">
-                        @foreach(config('mock.nav') as $nav)
-                            <nav class="nav">
-                                <a href="" class="nav__link">{{$nav['text1']}}</a>
-                                <div class="nav__point point"></div>
-                                <a href="" class="nav__link">{{$nav['text2']}}</a>
-                                <div class="nav__point point"></div>
-                                <a href="" class="nav__link">{{$nav['text3']}}</a>
-                            </nav>
-                        @endforeach
+    @include('includes.header')
+    <div class="main-wrapper">
+        <div class="main-wrapper2">
+            <div class="container">
+                <div class="main">
+                    <div class="main__left">
+                        <div class="main__page">
+                            @include('includes.page')
+                        </div>
+                        @include('includes.photos')
+                        <div class="main__characteristic">
+                            @include('includes.characteristic')
+                        </div>
+                    </div>
+                    <div class="main__description description">
+                        <div class="main__description-top description-top">
+                            <div class="description-top__left">
+                                <div class="description-top__description-availability description-availability">
+                                    <svg class="description-availability__img">
+                                        <use href="assets/images/icons.svg#icon-done"></use>
+                                    </svg>
+                                    <div class="description-availability__text">В наличии</div>
+                                </div>
+                                <div class="description__rating rating">
+                                    <div class="rating__stars">
+                                        <svg class="rating__star">
+                                            <use href="assets/images/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="rating__star">
+                                            <use href="assets/images/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="rating__star">
+                                            <use href="assets/images/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="rating__star">
+                                            <use href="assets/images/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="rating__star">
+                                            <use href="assets/images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <span class="rating__int">12</span>
+                                </div>
+                            </div>
+                            <div class="vendor-code">Артикул: <span class="vendor-code--dark">100500</span></div>
+                        </div>
+                        <div class="main__product-usage product-usage">
+                            <div class="action">
+                                <div class="action__text">Акция</div>
+                                <a href="" class="action__description">До 30 июля скидка — 20% на все тестовые
+                                    товары</a>
+                            </div>
+                            <div class="product-usage__price">
+                                <div class="product-usage__new-price">3 799 ₴</div>
+                                <div class="product-usage__old-price">4 200 ₴</div>
+                            </div>
+                            <div class="actions">
+                                <a href="" class="to-basket actions__to-basket">
+                                    <div class="to-basket__text">В корзину</div>
+                                    <svg class="to-basket__img">
+                                        <use href="assets/images/icons.svg#icon-basket"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="scales">
+                                    <svg class="scales__img">
+                                        <use href="assets/images/icons.svg#icon-compare"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="actions__like like">
+                                    <svg class="like__img">
+                                        <use href="assets/images/icons.svg#icon-like"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="buy-fast">
+                                    <svg class="buy-fast__img">
+                                        <use href="assets/images/icons.svg#icon-tel"></use>
+                                    </svg>
+                                    <div class="buy-fast__text">Купить в<br>1 клик</div>
+                                </a>
+                            </div>
+                        </div>
+                        @include('includes.condition')
+                        <div class="main__reviews">
+                            <div class="reviews">
+                                <div class="reviews__top">
+                                    <div class="reviews__title">Отзывы покупателей <span class="reviews__title--green">12</span>
+                                    </div>
+                                    <a href="" class="reviews__right-block">
+                                        <div class="reviews__all">Все отзывы</div>
+                                        <svg class="reviews__vector">
+                                            <use href="assets/images/icons.svg#icon-vector"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                @foreach(config('mock.review1') as $review)
+                                    <div class="review">
+                                        <div class="review__title">
+                                            <div class="review__name">{{$review['name']}} <span
+                                                    class="review__date">{{$review['date']}}</span>
+                                            </div>
+                                            <div class="review__rating">
+                                                <svg class="review__star review__star--orange">
+                                                    <use href="assets/images/icons.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="review__star review__star--orange">
+                                                    <use href="assets/images/icons.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="review__star review__star--orange">
+                                                    <use href="assets/images/icons.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="review__star review__star--orange">
+                                                    <use href="assets/images/icons.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="review__star review__star--yellow">
+                                                    <use href="assets/images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="review__text">{{$review['text']}}</div>
+                                    </div>
+                                @endforeach
+                                @foreach(config('mock.review2') as $review)
+                                    <div class="review">
+                                        <div class="review__title">
+                                            <div class="review__name">{{$review['name']}} <span
+                                                    class="review__date">{{$review['date']}}</span>
+                                            </div>
+                                            <div class="review__rating">
+                                                <svg class="review__star review__star--orange">
+                                                    <use href="assets/images/icons.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="review__star review__star--orange">
+                                                    <use href="assets/images/icons.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="review__star review__star--yellow">
+                                                    <use href="assets/images/icons.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="review__star review__star--yellow">
+                                                    <use href="assets/images/icons.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="review__star review__star--yellow">
+                                                    <use href="assets/images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="review__text">{{$review['text']}}</div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <a href="" class="main__buttonShowMore buttonShowMore">Показать еще</a>
                     </div>
                 </div>
-                <div class="header__right">
-                    @foreach(config('mock.tel') as $tel)
-                        <a href="tel:380680000000" class="header__tel tel">{{$tel['tel']}}</a>
-                    @endforeach
-                    <div class="header__lang">
-                        @foreach(config('mock.lang') as $lang)
-                            <div class="lang">
-                                <div class="lang__item">{{$lang['lang1']}}</div>
-                                <div class="lang__point point"></div>
-                                <div class="lang__item">{{$lang['lang2']}}</div>
-                            </div>
-                        @endforeach
+                <div class="pre-footer">
+                    <div class="pre-footer__title">Нужна помощь в подборе товара? Мы перезваниваем !</div>
+                    <div class="pre-footer__feedback feedback">
+                        <input type="tel" class="feedback__tel-input">
+                        <button type="submit" class="feedback__submit">Отправить</button>
                     </div>
-                    @foreach(config('mock.signIn') as $signIn)
-                        <div class="sign-in">
-                            <a href="" class="sign-in__text">{{$signIn['text']}}</a>
-                            <svg class="sign-in__logo">
-                                <use href="{{$signIn['logo']}}"></use>
-                            </svg>
-                        </div>
-                    @endforeach
                 </div>
             </div>
-            <div class="header__bottom">
-                <div class="header__burger-menu burger-menu">
-                    <div class="burger-menu__left">
-                        <div class="burger-menu__burger burger">
-                            <span class="burger__span"></span>
-                        </div>
-                        <div class="burger-menu__text">каталог</div>
-                    </div>
-                    <a href="" class="burger-menu__link">Все категории</a>
-                    <div class="burger-menu__list">
-
-                    </div>
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__text">2021 © Wezom Test
                 </div>
-                <div class="header__search-products-wrapper search-products-wrapper">
-                    <input type="text" placeholder="Поиск, например “тест”"
-                           class="header__search-products search-products">
-                    <svg class="search-products__icon">
-                        <use href="assets/images/icons.svg#icon-search"></use>
-                    </svg>
-                </div>
-                <div class="useful">
-                    <a href="" class="useful__item">
-                        <svg class="useful__img">
-                            <use href="assets/images/icons.svg#icon-compare"></use>
-                        </svg>
-                    </a>
-                    <a href="" class="useful__item">
-                        <svg class="useful__img">
-                            <use href="assets/images/icons.svg#icon-like"></use>
-                        </svg>
-                    </a>
-                    <a href="" class="useful__item">
-                        <svg class="useful__img">
-                            <use href="assets/images/icons.svg#icon-basket"></use>
-                        </svg>
-                        <div class="useful__counter">3</div>
-                    </a>
+                <div class="footer__text">Тестовое \\ Wezom
                 </div>
             </div>
         </div>

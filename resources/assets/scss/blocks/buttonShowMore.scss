@@ -1,0 +1,22 @@
+.buttonShowMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFA800;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 22px;
+    max-width: 147px;
+    height: 40px;
+    color: #5C6D7D;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 120%;
+    transition: all .3s;
+
+    &:hover{
+        background: #5C6D7D;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}

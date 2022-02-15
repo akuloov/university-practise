@@ -3,6 +3,7 @@
     border: 2px solid #FFCB6D;
     border-top-right-radius: 18px;
     display: flex;
+    position: relative;
 
     &__item{
         height: 60px;
@@ -12,9 +13,18 @@
         justify-content: center;
         margin: auto;
         width: 90px;
-        position: relative;
 
-        &:last-child{
+        &--active{
+            background: #47B39C;
+            fill: #fff;
+            border-top-right-radius: 18px;
+        }
+
+        &--basket{
+            position: relative;
+        }
+
+        &:nth-child(3){
             border-right: none;
         }
 
@@ -26,9 +36,22 @@
     &__img{
         width: 30px;
         height: 25px;
-        stroke: #33485D;
+        fill: #33485D;
         transition: all .3s;
+
+        &--basket{
+            width: 30px;
+            height: 25px;
+            stroke: #33485D;
+            transition: all .3s;
+        }
+
+        &--active{
+            stroke: #fff;
+            fill: #fff;
+        }
     }
+
 
     &__counter{
         width: 30px;
@@ -45,5 +68,9 @@
         position: absolute;
         right: 6px;
         top: 7px;
+
+        &--active{
+            background: #fff;
+        }
     }
 }

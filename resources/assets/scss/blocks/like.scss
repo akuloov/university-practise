@@ -1,0 +1,23 @@
+.like{
+    border-top: 2px solid #FFCB6D;
+    border-right: 2px solid #FFCB6D;
+    border-bottom: 2px solid #FFCB6D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    transition: all .3s;
+
+    &:hover{
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        background: #EB5757;
+    }
+
+    &__img{
+        width: 30px;
+        height: 25px;
+        fill: #33485D;
+    }
+}

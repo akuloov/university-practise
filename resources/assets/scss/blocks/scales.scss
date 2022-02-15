@@ -1,0 +1,19 @@
+.scales{
+    border: 2px solid #FFCB6D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    transition: all .3s;
+
+    &:hover{
+        border: 2px solid #fff;
+        background: #EB5757;
+    }
+
+    &__img{
+        width: 30px;
+        height: 25px;
+        fill: #33485D;
+    }
+}

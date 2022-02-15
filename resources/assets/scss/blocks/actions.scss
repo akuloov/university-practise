@@ -1,0 +1,12 @@
+.actions{
+    height: 60px;
+    display: flex;
+
+    &__to-basket{
+        margin-right: 10px;
+    }
+
+    &__like{
+        margin-right: 8px;
+    }
+}

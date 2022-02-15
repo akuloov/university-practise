@@ -1,11 +1,14 @@
 .burger-menu {
     display: flex;
     align-items: center;
-    max-width: 371px;
+    width: 371px;
     padding: 20px;
     background: #FFBE48;
     border-top-left-radius: 10px;
     color: #fff;
+    position: relative;
+    flex-shrink: 0;
+    cursor: pointer;
 
     &__left{
         display: flex;
@@ -22,6 +25,7 @@
         font-size: 24px;
         line-height: 120%;
         transition: all .3s;
+        font-weight: 500;
     }
 
     &__burger {
@@ -38,6 +42,22 @@
 
         &:hover {
             border-bottom: 1px solid rgba(255, 255, 255, 0);
+        }
+    }
+
+    &__list{
+        display: none;
+        box-shadow: 0 10px 80px rgba(0, 52, 41, .3);
+        position: absolute;
+        top: 71px;
+        left: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: #fff;
+        z-index: 30;
+
+        &--active{
+            display: block;
         }
     }
 }

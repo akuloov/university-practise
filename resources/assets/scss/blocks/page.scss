@@ -1,0 +1,13 @@
+.page{
+    color: #33485D;
+    opacity: 0.5;
+    font-size: 12px;
+
+    &__link{
+        transition: all .3s;
+
+        &:hover{
+            opacity: .7;
+        }
+    }
+}

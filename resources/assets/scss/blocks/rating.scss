@@ -1,0 +1,28 @@
+.rating{
+    display: flex;
+    align-items: center;
+
+    &__stars{
+        display: flex;
+        margin-right: 8px;
+    }
+
+    &__star{
+        width: 15px;
+        height: 15px;
+        fill: #FFA800;
+        margin-right: 4px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__int{
+        font-weight: 500;
+        font-size: 14px;
+        color: #33485D;
+        border-bottom: 1px solid rgba(92, 109, 125, .5);
+        margin-top: 3px;
+    }
+}

@@ -1,0 +1,31 @@
+.action{
+    display: flex;
+    height: 60px;
+
+    &__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #EB5757;
+        width: 110px;
+        font-weight: 500;
+        font-size: 24px;
+        color: #FFF;
+    }
+
+    &__description{
+        background: #FDEEEE;
+        color: #EB5757;
+        font-size: 16px;
+        width: 478px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        transition: all .3s;
+
+        &:hover{
+            color: #FDEEEE;
+            background: #219653;
+        }
+    }
+}
