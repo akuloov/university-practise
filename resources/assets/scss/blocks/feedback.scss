@@ -1,4 +1,33 @@
 .feedback{
     border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: #fff;
+    border-radius: 3px;
+    max-width: 586px;
 
+    &__tel-input{
+        height: 60px;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        color: rgba(51, 72, 93, .7);
+        padding-left: 19px;
+        padding-right: 162px;
+    }
+
+    &__submit{
+        background: #FFA800;
+        border-radius: 3px;
+        font-weight: 500;
+        font-size: 24px;
+        color: #FFF;
+        height: 55px;
+        transition: all .3s;
+
+        &:hover{
+            background: #219653;
+        }
+    }
 }
